@@ -1,0 +1,336 @@
+<html>
+ <head>
+<title> Теремок— русская народная сказка</title>
+<style>
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0fcac;
+}
+
+header {
+    background-color: #a1fb77;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-style: italic;
+    margin: 0;
+}
+
+h2 {
+    background-color: #b9ff57;
+    font-style: italic;
+    font-size: 30px;;
+    margin: 0;
+    text-align: center;
+    border-radius: 10px;
+}
+h3 {
+
+    font-style: italic;
+    font-size: 30px;;
+    margin: 0;
+    text-align: left;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.flying-image {
+            width: 70px; /* Ширина изображения */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            position:absolute;
+            pointer-events:none; /* Игнорировать события мыши */
+            transition: transform 0.1s ease; /* Плавный переход для анимации */
+            z-index: 9999;
+        }
+
+.skazka {
+    background-color: #b9ff57;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.story {
+    background-color: #e8ffcb;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.ayu {
+    position: relative;
+    float: right;
+    width: 200px;
+            background-color: #d2f9a0;
+            color: rgb(0, 0, 0);
+            padding: 15px;
+            height: 566%; 
+            border-radius: 10px;
+           
+}
+
+footer {
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    background-color: #a1fb77;
+    color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    position: relative;
+}
+
+.mouse {
+    width: 120px; /* Ширина мыши */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    position: absolute;
+    bottom: 1px; /* Расположение снизу */
+    transition: left 0.2s ease; /* Плавный переход при перемещении */
+}
+
+
+.slider {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+     
+        .navigation {
+            position: absolute;
+            top: 50%;
+            width: 83%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .btn {
+            background-color: rgba(72, 140, 0, 0.5);
+            color: rgb(2, 0, 0);
+         border: none;
+            padding: 20px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+        
+</style>
+
+</head>
+
+ <body>
+    <img src="C:\Users\Lera\Desktop\шарага\html\теромок кладько\html\ресурс\тер1.png" alt="Летающая картинка" class="flying-image"> 
+     
+    <script>
+        const flyingImage = document.querySelector('.flying-image');
+
+        document.addEventListener('mousemove', function(event) {
+            // Обновляем позицию изображения по координатам курсора
+            flyingImage.style.left = event.pageX + 'px';
+            flyingImage.style.top = event.pageY + 'px';
+        });
+    </script>
+
+    <div class="header">
+    <header>
+        <h1>"Теремок" читать </h1>
+        <br>
+        <nav>
+            <a href="#story">Сказка</a>
+            <a href=https://deti-online.com/audioskazki/russkie-narodnye-skazki-mp3/teremok>Аудио сказка</a>
+            <a href="#pers">Персонажи</a>
+            <a href="#kon">Конец</a>
+            
+        </nav>
+    </header>
+</div>
+
+<br>
+    
+<div class="skazka">
+        <section id="pers" class="ayu">
+           
+            <h3>Персонажи</h3>
+            <ul>
+                <li>мышка-норушка</li>
+                <li>лягушка-квакушка</li>
+                <li>зайчик-побегайчик</li>
+                <li>лисичка-сестричка</li>
+                <li>волчок-серый</li>
+                <li>медведь</li>
+            </ul>
+            
+            <b><a style="color: #004b0f; text-decoration: none;" href="#slider">Тыкни сюда и перейди на слайдер</a></b>
+           
+        </section>
+  
+     
+
+
+    <section id="story" class="story">
+        <h2>Начало </h2>
+
+<p><b><font size=5 color=red face+Arial>C</font>тоит в поле теремок.</b> 
+<p align=right> Бежит мимо мышка-норушка. </p>
+<p align=center><em>Увидела теремок, остановилась и спрашивает:</em></p>
+<p><font size=5 color=green face+Arial>— Терем-теремок!Кто в тереме</font><font size=3 color=blue face+Arial>живет?</font></p>
+<p><strike>Никто не отзывается.</strike></p>
+<p align=center>Вошла<sup>мышка</sup>в теремок</p>
+<p align=right ><font size=6 face+Arial>и стала</font><u><sub>там<sub></u> <sup>жить</sup>.<p>
+<img src="C:\Users\Lera\Desktop\шарага\html\теромок кладько\html\ресурс\357_3448.webp" width=50% height=auto> 
+<p>Прискакала к терему лягушка-квакушка и спрашивает:<br>
+— Терем-теремок! Кто в тереме живет?<br>
+— Я, мышка-норушка! А ты кто?<br>
+— А я лягушка-квакушка.<br>
+— Иди ко мне жить! Лягушка прыгнула в теремок. Стали они вдвоем жить.<p>
+<img src="C:\Users\Lera\Desktop\шарага\html\теромок кладько\html\ресурс\357_3449.webp" width="50%" height=auto>
+<p>Бежит мимо зайчик-побегайчик. Остановился и спрашивает:<br>
+— Терем-теремок! Кто в тереме живет?<br>
+— Я, мышка-норушка!<br>
+— Я, лягушка-квакушка!<br>
+— А ты кто?<br>
+— А я зайчик-побегайчик.<br>
+— Иди к нам жить! Заяц скок в теремок! Стали они втроем жить.<p>
+<img src="C:\Users\Lera\Desktop\шарага\html\теромок кладько\html\ресурс\357_3450.webp" width="50%" height=auto>
+<p>Идет мимо лисичка-сестричка. Постучала в окошко и спрашивает:<br>
+— Терем-теремок! Кто в тереме живет?<br>
+— Я, мышка-норушка.<br>
+— Я, лягушка-квакушка.<br>
+— Я, зайчик-побегайчик.<br>
+— А ты кто?<br>
+— А я лисичка-сестричка.<br>
+— Иди к нам жить! Забралась лисичка в теремок. Стали они вчетвером жить.<p>
+<img src="C:\Users\Lera\Desktop\шарага\html\теромок кладько\html\ресурс\357_3451.webp" width="50%" height=auto>
+<p>Прибежал волчок-серый бочок, заглянул в дверь и спрашивает:<br>
+— Терем-теремок! Кто в тереме живет?<br>
+— Я, мышка-норушка.<br>
+— Я, лягушка-квакушка.<br>
+— Я, зайчик-побегайчик.<br>
+— Я, лисичка-сестричка.<br>
+— А ты кто?<br>
+— А я волчок-серый бочок.<br>
+— Иди к нам жить!<p>
+<p>Волк влез в теремок. Стали они впятером жить. Вот они в теремке живут, песни поют.<p>
+<img src="C:\Users\Lera\Desktop\шарага\html\теромок кладько\html\ресурс\357_3452.webp" width="50%" height=auto>
+<p>Вдруг идет медведь косолапый. Увидел медведь теремок, услыхал песни, остановился и заревел во всю мочь:<br>
+— Терем-теремок! Кто в тереме живет?<br>
+— Я, мышка-норушка.<br>
+— Я, лягушка-квакушка.<br>
+— Я, зайчик-побегайчик.<br>
+— Я, лисичка-сестричка.<br>
+— Я, волчок-серый бочок.<br>
+— А ты кто?<br>
+— А я медведь косолапый.<br>
+— Иди к нам жить!<p>
+<p>Медведь и полез в теремок. Лез-лез, лез-лез — никак не мог влезть и говорит:<br>
+— А я лучше у вас на крыше буду жить.<br>
+— Да ты нас раздавишь.<br>
+— Нет, не раздавлю.<br>
+— Ну так полезай! Влез медведь на крышу и только уселся — трах! — развалился теремок.<p>
+<img src="C:\Users\Lera\Desktop\шарага\html\теромок кладько\html\ресурс\357_3453.webp" width="50%" height=auto>
+<p>Затрещал теремок, упал набок и весь развалился. Еле-еле успели из него выскочить мышка-норушка,<br>
+лягушка-квакушка, зайчик-побегайчик, лисичка-сестричка, волчок-серый бочок — все целы и невредимы.<p>
+<p>Принялись они бревна носить, доски пилить — новый теремок строить.<br>
+Лучше прежнего выстроили!<p>
+    
+<br>
+<article id="slider">
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="C:\Users\Lera\Desktop\шарага\html\теромок кладько\html\ресурс\тер.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="C:\Users\Lera\Desktop\шарага\html\теромок кладько\html\ресурс\миша.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="C:\Users\Lera\Desktop\шарага\html\теромок кладько\html\ресурс\лис.jpg" alt="Image 3"></div>
+        </div>
+        <div class="navigation">
+            <button class="btn" onclick="prevSlide()">&#10094;</button>
+            <button class="btn" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+    
+    <script>
+        let currentSlide = 0;
+    
+        function showSlide(index) {
+            const slides = document.querySelector('.slides');
+            const totalSlides = document.querySelectorAll('.slide').length;
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+            slides.style.transform = `translateX(${-currentSlide * 100}%)`;
+        }
+    
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+    
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+    </script>
+</div>
+</article>
+</section>
+
+    <br>
+    <div class="kon">
+        <section id="kon" class="kon">
+    <footer>
+        <img src="C:\Users\Lera\Desktop\шарага\html\теромок кладько\html\ресурс\mous.png" alt="Мышь" class="mouse"> 
+        <script>
+            const mouse1 = document.querySelector('.mouse1');
+            const mouse = document.querySelector('.mouse');
+            let position = 0;
+            let direction = 1;
+    
+            function animateMouse() {
+                position += 6 * direction;
+    
+                if (position > window.innerWidth - 50) {
+                    direction = -1; // Перевернуть мышь
+                    mouse.style.transform = 'scaleX(-1)';
+                } else if (position < 0) {
+                    direction = 1; // Перевернуть мышь
+                    mouse.style.transform = 'scaleX(1)';
+                }
+    
+                mouse.style.left = position + 'px';
+                requestAnimationFrame(animateMouse);
+                
+            }
+    
+            animateMouse();
+        </script>
+
+
+
+        <p>2025 Конец</p>
+    </footer>
+</div>
+
+</body>
+</html>
